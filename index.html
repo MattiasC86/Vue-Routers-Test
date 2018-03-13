@@ -1,0 +1,26 @@
+
+
+<html>
+<head>
+    <title>VueJs Router test</title>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+</head>
+<body>
+<div id = "app">
+    <h1>Vue routing</h1>
+    <p>
+        <router-link to = "/main">Main</router-link>
+        <router-link to = "/settings">Settings</router-link>
+    </p>
+
+    <!-- component matched by the route will render here -->
+    <router-view></router-view>
+</div>
+
+<script src="./routes/index.js" type="module"></script>
+
+</body>
+</html>
